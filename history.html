@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/images/q5Dm0I9Hnis.ico">
+    <title>Просто Кино - Кинофестиваль</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+        <div class="container py-3">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+
+                <img class="t451__logo__img"
+                    src="static/logo.png"
+                    imgfield="img" style="max-width: 250px;" alt="Sitename">
+            </a>
+            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="index.html#directions">Направления</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="reg.html">Регламент</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="our-partners.html">Наши партнеры</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="#">Наша история</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-5">
+        <div class="container">
+            <div class="row justify-content-center"> <!-- Центрируем строку -->
+                <div class="col-12 col-lg-8 text-center"> <!-- Центрируем колонку и ограничиваем ширину -->
+                    <div class="row justify-content-center g-4"> <!-- Вложенная строка для центрирования -->
+                        <!-- Контакты -->
+                        <div class="col-md-6">
+                            <h3 class="title-font fs-4 fw-bold mb-3">Контакты</h3>
+                            <ul class="list-unstyled text-secondary">
+                                <li class="mb-2 d-flex justify-content-center align-items-center fs-5">
+                                    <i class="fas fa-map-marker-alt text-danger me-3 fs-5"></i>
+                                    Краснодар, Россия
+                                </li>
+                                <li class="mb-2 d-flex justify-content-center align-items-center fs-5">
+                                    <i class="fas fa-envelope text-danger me-3 fs-5"></i>
+                                    <a href="mailto:prosto_kino_kuban@mail.ru"  style="color: grey; ">prosto_kino_kuban@mail.ru</a>
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center fs-5">
+                                    <i class="fas fa-phone text-danger me-3 fs-5"></i>
+                                    +7 (918) 260-65-58
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Социальные сети -->
+                        <div class="col-md-6">
+                            <h3 class="title-font fs-4 fw-bold mb-3">Социальные сети</h3>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="https://vk.com/prosto_kino_fest"
+                                    class="social-icon d-inline-flex align-items-center justify-content-center rounded-circle fs-5">
+                                    <i class="fab fa-vk"></i>
+                                </a>
+                                <a href="https://t.me/prosto_kino_fest"
+                                    class="social-icon d-inline-flex align-items-center justify-content-center  fs-5">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Копирайт -->
+            <div class="border-top border-dark mt-5 pt-4 text-center text-secondary">
+                <p class="fs-5">© 2025 Кинофестиваль "Просто Кино". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Добавляем класс при скролле для навигации
+        window.addEventListener('scroll', function () {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg', 'py-2');
+                nav.classList.remove('py-3');
+            } else {
+                nav.classList.remove('shadow-lg', 'py-2');
+                nav.classList.add('py-3');
+            }
+        });
+
+        // Плавный скролл для якорных ссылок
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 90,
+                        behavior: 'smooth'
+                    });
+
+                    // Закрываем мобильное меню после клика
+                    const navbarCollapse = document.getElementById('navbarNav');
+                    if (navbarCollapse.classList.contains('show')) {
+                        new bootstrap.Collapse(navbarCollapse).toggle();
+                    }
+                }
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+    // Найдем все секции, которые должны появляться плавно
+    const hiddenSections = document.querySelectorAll('.section-hidden');
+
+    const sectionObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    hiddenSections.forEach(section => sectionObserver.observe(section));
+});
+
+        // Инициализируем анимации после загрузки страницы
+        document.addEventListener('DOMContentLoaded', () => {
+            // Добавляем классы для навигации при скролле
+            window.addEventListener('scroll', function () {
+                const nav = document.querySelector('nav');
+                if (window.scrollY > 50) {
+                    nav.classList.add('shadow-lg', 'py-2');
+                    nav.classList.remove('py-3');
+                } else {
+                    nav.classList.remove('shadow-lg', 'py-2');
+                    nav.classList.add('py-3');
+                }
+            });
+
+            // Плавный скролл для якорных ссылок
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 90,
+                            behavior: 'smooth'
+                        });
+
+                        // Закрываем мобильное меню
+                        const navbarCollapse = document.getElementById('navbarNav');
+                        if (navbarCollapse.classList.contains('show')) {
+                            new bootstrap.Collapse(navbarCollapse).toggle();
+                        }
+                    }
+                });
+            });
+
+            // Инициализируем анимации
+            initScrollAnimations();
+        });
+        function updateCountdown() {
+            // Дата начала фестиваля: 21 сентября 2025 года, 00:00:00
+            const festivalDate = new Date('2025-09-21T00:00:00');
+            const now = new Date();
+
+            // Разница в миллисекундах
+            const diff = festivalDate - now;
+
+            // Если дата прошла, показываем нули
+            if (diff <= 0) {
+                document.getElementById('days').textContent = '00';
+                document.getElementById('hours').textContent = '00';
+                document.getElementById('minutes').textContent = '00';
+                document.getElementById('seconds').textContent = '00';
+                return;
+            }
+
+            // Расчет временных значений
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            // Обновление элементов
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        // Обновляем таймер каждую секунду
+        setInterval(updateCountdown, 1000);
+
+        // Инициализация при загрузке
+        updateCountdown();
+        document.addEventListener("DOMContentLoaded", function() {
+  // Список фраз и иконок
+  const phrases = [
+    {
+      text: "Верность истокам",
+      icon: '<i class="fas fa-heart text-danger fs-5"></i>'
+    },
+    {
+      text: "Искусство",
+      icon: '<i class="fas fa-palette text-danger fs-5"></i>'
+    },
+    {
+      text: "Свобода мышления",
+      icon: '<i class="fas fa-brain text-danger fs-5"></i>'
+    },
+    {
+      text: "Кино",
+      icon: '<i class="fas fa-film text-danger fs-5"></i>'
+    }
+  ];
+
+  let current = 0;
+  const textEl = document.getElementById('about-feature-text');
+  const iconEl = document.getElementById('about-feature-icon');
+
+  function showPhrase(idx) {
+    // Сначала убираем видимость
+    textEl.classList.remove("visible");
+    iconEl.classList.remove('icon-animate');
+    // После ухода - меняем контент и показываем плавно
+    setTimeout(() => {
+      textEl.innerHTML = phrases[idx].text;
+      iconEl.innerHTML = phrases[idx].icon;
+      textEl.classList.add("visible");
+      iconEl.classList.add('icon-animate');
+    }, 400); // время совпадает с CSS transition
+  }
+
+  // Покажем первый вариант после загрузки
+  setTimeout(() => {
+    textEl.classList.add("visible");
+    iconEl.classList.add('icon-animate');
+  }, 100);
+
+  // Циклическая смена фраз и иконок
+  setInterval(() => {
+    current = (current + 1) % phrases.length;
+    showPhrase(current);
+  }, 2600); // Меняйте время (мс) на свой вкус (2.6 секунды фраза)
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const aboutSection = document.getElementById('about');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.5 }); // Срабатывает, когда 10% элемента видно
+    
+    observer.observe(aboutSection);
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const section = document.querySelector('#stats');
+    const cards = Array.from(section.querySelectorAll('.stat-card'));
+
+    let sectionAppeared = false;
+
+    const sectionObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !sectionAppeared) {
+                sectionAppeared = true;
+                section.classList.remove('section-hidden');
+                section.classList.add('section-visible');
+                // Стартуем анимацию карточек
+                cards.forEach(card => card.classList.remove('visible')); // reset if needed
+
+                cards.forEach((card, idx) => {
+                    setTimeout(() => {
+                        card.classList.add('visible');
+                    }, idx * 1500);
+                });
+                observer.disconnect();
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    sectionObserver.observe(section);
+});
+    </script>
+</body>
+
+</html>
