@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/images/q5Dm0I9Hnis.ico">
+    <title>Просто Кино - Регламент фестиваля</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        /* Все стили из index.html */
+        /* Дополнительные стили для этой страницы */
+        .document-card {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(30,30,30,0.8);
+        }
+        
+        .document-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(229,62,62,0.15);
+            border-color: rgba(229,62,62,0.3);
+        }
+        
+        .document-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: rgba(229,62,62,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .document-details {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .file-size {
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+        
+        .download-btn {
+            position: relative;
+            overflow: hidden;
+            padding: 0.8rem 1.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(229,62,62,0.3);
+        }
+        
+        .document-description {
+            min-height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+        <div class="container py-3">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img class="t451__logo__img" src="static/logo.png" imgfield="img" style="max-width: 250px;" alt="Sitename">
+            </a>
+            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="index.html#directions">Направления</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="reg.html">Регламент</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="our-partners.html">Партнеры</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="history.html">Наша история</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент страницы -->
+    <section class="section-padding bg-black text-white">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h1 class="title-font display-4 fw-bold mb-3">
+                        <span class="text-danger">Регламент</span> фестиваля
+                    </h1>
+                    <p class="lead fs-5 text-secondary">
+                        Официальные документы для участников и гостей кинофестиваля "Просто Кино"
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center g-5">
+                <!-- Карточка с Регламентом -->
+                <div class="col-md-10 col-lg-6">
+                    <div class="document-card rounded p-4 p-lg-5 h-100">
+                        <div class="document-icon">
+                            <i class="fas fa-file-contract text-danger fa-2x"></i>
+                        </div>
+                        <h2 class="title-font text-center mb-4">Регламент фестиваля</h2>
+                        
+                        <div class="document-description mb-4 text-center">
+                            <p>
+                                Полный свод правил и условий участия в кинофестивале. 
+                                Включает требования к работам, сроки подачи заявок, критерии отбора и порядок проведения мероприятий.
+                            </p>
+                        </div>
+                        
+                        <div class="document-details text-center">
+                            <div class="file-size mb-3">
+                                <i class="fas fa-file-pdf text-danger me-2"></i>
+                                PDF документ, 1.2 МБ
+                            </div>
+                            <a href="static/documents/Reglament.pdf" class="btn btn-danger download-btn" download>
+                                <i class="fas fa-download me-2"></i>Скачать Регламент
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка с Офертой -->
+                <div class="col-md-10 col-lg-6">
+                    <div class="document-card rounded p-4 p-lg-5 h-100">
+                        <div class="document-icon">
+                            <i class="fas fa-handshake text-danger fa-2x"></i>
+                        </div>
+                        <h2 class="title-font text-center mb-4">Публичная оферта</h2>
+                        
+                        <div class="document-description mb-4 text-center">
+                            <p>
+                                Юридический документ, определяющий условия сотрудничества с организаторами фестиваля.
+                                Содержит права и обязанности сторон, порядок разрешения споров и другие юридические аспекты.
+                            </p>
+                        </div>
+                        
+                        <div class="document-details text-center">
+                            <div class="file-size mb-3">
+                                <i class="fas fa-file-pdf text-danger me-2"></i>
+                                PDF документ, 0.8 МБ
+                            </div>
+                            <a href="static/documents/Oferta.pdf" class="btn btn-danger download-btn" download>
+                                <i class="fas fa-download me-2"></i>Скачать Оферту
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-black text-white py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8 text-center">
+                    <div class="row justify-content-center g-4">
+                        <!-- Контакты -->
+                        <div class="col-md-6">
+                            <h3 class="title-font fs-4 fw-bold mb-3">Контакты</h3>
+                            <ul class="list-unstyled text-secondary">
+                                <li class="mb-2 d-flex justify-content-center align-items-center fs-5">
+                                    <i class="fas fa-map-marker-alt text-danger me-3 fs-5"></i>
+                                    Краснодар, Россия
+                                </li>
+                                <li class="mb-2 d-flex justify-content-center align-items-center fs-5">
+                                    <i class="fas fa-envelope text-danger me-3 fs-5"></i>
+                                    <a href="mailto:prosto_kino_kuban@mail.ru"  style="color: grey; ">prosto_kino_kuban@mail.ru</a>
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center fs-5">
+                                    <i class="fas fa-phone text-danger me-3 fs-5"></i>
+                                    +7 (918) 260-65-58
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Социальные сети -->
+                        <div class="col-md-6">
+                            <h3 class="title-font fs-4 fw-bold mb-3">Социальные сети</h3>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="https://vk.com/prosto_kino_fest"
+                                    class="social-icon d-inline-flex align-items-center justify-content-center rounded-circle fs-5">
+                                    <i class="fab fa-vk"></i>
+                                </a>
+                                <a href="https://t.me/prosto_kino_fest"
+                                    class="social-icon d-inline-flex align-items-center justify-content-center  fs-5">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Копирайт -->
+            <div class="border-top border-dark mt-5 pt-4 text-center text-secondary">
+                <p class="fs-5">© 2025 Кинофестиваль "Просто Кино". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+
+</html>

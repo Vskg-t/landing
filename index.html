@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/images/q5Dm0I9Hnis.ico">
+    <title>Просто Кино - Кинофестиваль</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+        <div class="container py-3">
+            <a class="navbar-brand d-flex align-items-center" href="#start">
+
+                <img class="t451__logo__img"
+                    src="static/logo.png"
+                    imgfield="img" style="max-width: 250px;" alt="Sitename">
+            </a>
+            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="#directions">Направления</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="reg.html">Регламент</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="our-partners.html">Партнеры</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="history.html">Наша история</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+        class="hero-section text-white d-flex align-items-center section-padding position-relative overflow-hidden">
+        <!-- Видео фон -->
+        <div id="start" class="video-background position-absolute top-0 start-0 w-100 h-100">
+            <video autoplay muted loop playsinline class="w-100 h-100 object-cover">
+                <source src="static/prosto_kino.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+            <!-- Затемнение видео для лучшей читаемости текста -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+        </div>
+
+        <div class="container text-center py-5 position-relative z-index-1">
+            <h1 class="title-font hero-heading fw-bold mb-4 display-3">
+                Мы открываем многогранный<br>
+                <span class="text-danger">мир русского кино</span>
+            </h1>
+            <p class="hero-subheading mb-5 mx-auto fs-4">
+                Кинофестиваль "Просто кино" призван продвигать молодой кинематограф Кубани и России
+            </p>
+            <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+                <a href="#dates" class="btn btn-danger btn-lg px-4 py-3 fw-semibold fs-5">
+                    Участвовать
+                </a>
+                <a href="#about" class="btn btn-outline-light btn-lg px-4 py-3 fw-semibold fs-5">
+                    Узнать больше
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+   <section id="about" class="section-padding bg-black section-hidden text-white">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <img src="static/images/03.jpg" 
+                     alt="Кинофестиваль" 
+                     class="img-fluid rounded shadow-lg slide-in-left">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="title-font fw-bold mb-4 display-4">
+                    О фестивале <span class="text-danger">"Просто кино"</span>
+                </h2>
+                <p class="lead mb-4 fs-5">
+                    Кинофестиваль "Просто кино" существует с 2024 года и призван продвигать молодой кинематограф
+                    Кубани и России, открывать новое региональное и межрегиональное кино для широкой аудитории.
+                </p>
+                <div class="row g-3 mt-5">
+                    <div class="col-12 d-flex align-items-center justify-content-start">
+                        <div id="about-feature-icon" class="feature-icon bg-danger bg-opacity-10">
+                            <i class="fas fa-heart text-danger fs-5"></i>
+                        </div>
+                        <span id="about-feature-text" class="ms-3 fw-medium fs-5 fade-phrase">Верность истокам</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="section-padding bg-black text-white">
+        <div class="container">
+            <h2 class="title-font text-center fw-bold mb-5 display-4">
+                Наши <span class="text-danger">достижения</span>
+            </h2>
+            <div class="row g-4 mt-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-card bg-white p-4 rounded shadow h-100 text-center">
+                        <div class="text-danger display-4 fw-bold mb-2">2000+</div>
+                        <div class="text-muted text-uppercase small fw-semibold fs-5"><i>живых</i> зрителей</div>
+                        <div class="mt-4">
+                            <i class="fas fa-users fa-2x text-secondary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-card bg-white p-4 rounded shadow h-100 text-center">
+                        <div class="text-danger display-4 fw-bold mb-2">70+</div>
+                        <div class="text-muted text-uppercase small fw-semibold fs-5"><i>аудио-визуальных</i> работ
+                        </div>
+                        <div class="mt-4">
+                            <i class="fas fa-video fa-2x text-secondary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-card bg-white p-4 rounded shadow h-100 text-center">
+                        <div class="text-danger display-4 fw-bold mb-2">15</div>
+                        <div class="text-muted text-uppercase small fw-semibold fs-5"><i>профессиональных</i> жюри</div>
+                        <div class="mt-4">
+                            <i class="fas fa-gavel fa-2x text-secondary"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-card bg-white p-4 rounded shadow h-100 text-center">
+                        <div class="text-danger display-4 fw-bold mb-2">5+</div>
+                        <div class="text-muted text-uppercase small fw-semibold fs-5"><i>крупнейших</i> площадок</div>
+                        <div class="mt-4">
+                            <i class="fas fa-map-marker-alt fa-2x text-secondary"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dates Section -->
+    <section id="dates" class="section-padding bg-black section-hidden">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="dates-container shadow-lg p-5">
+
+
+                        <!-- Таймер обратного отсчета -->
+                        <div class="countdown-timer text-center">
+                            <h3 class="title-font fw-bold mb-4">До начала мероприятия <span
+                                    class="text-danger">осталось:</span></h3>
+                            <div class="timer-container">
+                                <div class="timer-item">
+                                    <div class="timer-value" id="days">00</div>
+                                    <div class="timer-label">дней</div>
+                                </div>
+                                <div class="timer-separator">:</div>
+
+                                <div class="timer-item">
+                                    <div class="timer-value" id="hours">00</div>
+                                    <div class="timer-label">часов</div>
+                                </div>
+                                <div class="timer-separator">:</div>
+
+                                <div class="timer-item">
+                                    <div class="timer-value" id="minutes">00</div>
+                                    <div class="timer-label">минут</div>
+                                </div>
+                                <div class="timer-separator">:</div>
+
+                                <div class="timer-item">
+                                    <div class="timer-value" id="seconds">00</div>
+                                    <div class="timer-label">секунд</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-5">
+                            <p class="lead mb-4 fs-5">
+                                Всероссийский молодёжный кинофестиваль «Просто кино» пройдет в Краснодарском крае в
+                                городе Краснодаре с <span class="fw-bold">21 по 27 сентября 2025 года</span>.
+                            </p>
+                            <p class="lead mb-4 fs-5">
+                                Прием заявок начинается <span class="fw-bold">3 марта 2025 года</span> и заканчивается
+                                <span class="fw-bold">10 августа 2025 года</span>.
+                            </p>
+                            <p class="lead mb-4 fs-5">
+                                Наши участники – молодые кинематографисты в возрасте от 18 до 40 лет, как профессионалы,
+                                так и непрофессионалы.
+                            </p>
+                        </div>
+                        <div class="text-center mt-5">
+                            <a href="https://forms.yandex.ru/u/66abe472eb61461754e4a5b4/"
+                                style="color: black; text-decoration: none;">
+                            <button class="btn btn-danger btn-lg px-5 py-3 fw-semibold fs-5">
+                                Подать заявку
+                            </button>
+                            </a>
+                        </div>
+                        <p class="text-muted small mt-4 text-center">
+                            * Оргкомитет Фестиваля может корректировать дату окончания приема заявок.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Directions Section -->
+    <section id="directions" class="section-padding bg-dark bg-gradient section-hidden">
+        <div class="container">
+            <h2 class="title-font text-center fw-bold mb-5 display-4 text-white">
+                Направления нашего <span class="text-danger">фестиваля</span>
+            </h2>
+            <div class="row g-4 mt-4">
+                <!-- Non-fiction -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="film-type-card bg-white p-4 rounded shadow h-100">
+                        <div class="feature-icon bg-danger bg-opacity-10">
+                            <i class="fas fa-camera text-danger fs-4"></i>
+                        </div>
+                        <h3 class="title-font fs-4 fw-bold mb-3">Неигровое кино</h3>
+                        <p class="text-secondary mb-3 fs-5">
+                            (документальные фильмы) – произведение, материалом которого являются съёмки подлинных
+                            событий. Применяется как постановочная, так и репортажная съёмка, а также используются
+                            архивные материалы.
+                        </p>
+                        <p class="text-muted small fw-medium fs-5">
+                            Принимаются полнометражные и короткометражные работы до 180 минут.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Fiction -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="film-type-card bg-white p-4 rounded shadow h-100">
+                        <div class="feature-icon bg-danger bg-opacity-10">
+                            <i class="fas fa-theater-masks text-danger fs-4"></i>
+                        </div>
+                        <h3 class="title-font fs-4 fw-bold mb-3">Игровое кино</h3>
+                        <p class="text-secondary mb-3 fs-5">
+                            (художественные фильмы) - произведение, имеющее в основе сюжет, воплощённый в сценарии и
+                            интерпретируемый режиссёром, который создаётся с помощью актёрской игры, операторского и
+                            прочих искусств.
+                        </p>
+                        <p class="text-muted small fw-medium fs-5">
+                            Принимаются полнометражные и короткометражные работы до 180 минут.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Plastic Cinema -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="film-type-card bg-white p-4 rounded shadow h-100">
+                        <div class="feature-icon bg-danger bg-opacity-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-reception-3" viewBox="0 0 16 16">
+  <path fill="red" d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+</svg>
+                        </div>
+                        <h3 class="title-font fs-4 fw-bold mb-3">Пластическое кино</h3>
+                        <p class="text-secondary mb-3 fs-5">
+                            произведения на основе танца, хореографии, физического театра или любого другого из способов
+                            движения.
+                        </p>
+                        <p class="text-muted small fw-medium fs-5">
+                            Принимаются полнометражные и короткометражные работы.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experimental Cinema -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="film-type-card bg-white p-4 rounded shadow h-100">
+                        <div class="feature-icon bg-danger bg-opacity-10">
+                            <i class="fas fa-flask text-danger fs-4"></i>
+                        </div>
+                        <h3 class="title-font fs-4 fw-bold mb-3">Экспериментальное кино</h3>
+                        <p class="text-secondary mb-3 fs-5">
+                            способ кинопроизводства, который коренным образом пересматривает кинематографические
+                            условности и исследует не-нарративные формы или альтернативы традиционным повествованиям или
+                            методам работы.
+                        </p>
+                        <p class="text-muted small fw-medium fs-5">
+                            Принимаются полнометражные и короткометражные работы до 180 минут.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-dark text-white section-hidden">
+    <div class="container text-center">
+        <h2 class="title-font fw-bold mb-4 display-4">
+            Готовы стать частью <span class="text-danger">фестиваля</span>?
+        </h2>
+        <p class="lead mb-5 mx-auto fs-4">
+            Присылайте свои работы и станьте частью российского кинематографа!
+        </p>
+        
+        <!-- Карусель с изображениями -->
+        <div class="carousel-container mb-5 mx-auto" style="max-width: 800px;">
+            <div id="ctaCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner rounded shadow-lg">
+                    <!-- Слайд 1 -->
+                    <div class="carousel-item active">
+                        <img src="static/images/01.jpg" 
+                             class="d-block w-100" 
+                             alt="Кинофестиваль">
+                    </div>
+                    <!-- Слайд 2 -->
+                    <div class="carousel-item">
+                        <img src="static/images/02.jpg" 
+                             class="d-block w-100" 
+                             alt="Кинофестиваль">
+                    </div>
+                    <!-- Слайд 3 -->
+                    <div class="carousel-item">
+                        <img src="static/images/05.jpg" 
+                             class="d-block w-100" 
+                             alt="Кинофестиваль">
+                    </div>
+                    <!-- Слайд 4 -->
+                    <div class="carousel-item">
+                        <img src="static/images/04.jpg" 
+                             class="d-block w-100" 
+                             alt="Кинофестиваль">
+                    </div>
+                </div>
+                
+                <!-- Элементы управления -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#ctaCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ctaCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+                
+                <!-- Индикаторы -->
+                <div class="carousel-indicators position-relative mt-3">
+                    <button type="button" data-bs-target="#ctaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#ctaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#ctaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#ctaCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="d-flex flex-column flex-md-row justify-content-center gap-3 mt-4">
+            <a href="#dates" class="btn btn-danger btn-lg px-4 py-3 fw-semibold fs-5">
+                Подать заявку
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-5">
+        <div class="container">
+            <div class="row justify-content-center"> <!-- Центрируем строку -->
+                <div class="col-12 col-lg-8 text-center"> <!-- Центрируем колонку и ограничиваем ширину -->
+                    <div class="row justify-content-center g-4"> <!-- Вложенная строка для центрирования -->
+                        <!-- Контакты -->
+                        <div class="col-md-6">
+                            <h3 class="title-font fs-4 fw-bold mb-3">Контакты</h3>
+                            <ul class="list-unstyled text-secondary">
+                                <li class="mb-2 d-flex justify-content-center align-items-center fs-5">
+                                    <i class="fas fa-map-marker-alt text-danger me-3 fs-5"></i>
+                                    Краснодар, Россия
+                                </li>
+                                <li class="mb-2 d-flex justify-content-center align-items-center fs-5">
+                                    <i class="fas fa-envelope text-danger me-3 fs-5"></i>
+                                    <a href="mailto:prosto_kino_kuban@mail.ru"  style="color: grey; ">prosto_kino_kuban@mail.ru</a>
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center fs-5">
+                                    <i class="fas fa-phone text-danger me-3 fs-5"></i>
+                                    +7 (918) 260-65-58 
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Социальные сети -->
+                        <div class="col-md-6">
+                            <h3 class="title-font fs-4 fw-bold mb-3">Социальные сети</h3>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="https://vk.com/prosto_kino_fest"
+                                    class="social-icon d-inline-flex align-items-center justify-content-center rounded-circle fs-5">
+                                    <i class="fab fa-vk"></i>
+                                </a>
+                                <a href="https://t.me/prosto_kino_fest"
+                                    class="social-icon d-inline-flex align-items-center justify-content-center  fs-5">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Копирайт -->
+            <div class="border-top border-dark mt-5 pt-4 text-center text-secondary">
+                <p class="fs-5">© 2025 Кинофестиваль "Просто Кино". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Добавляем класс при скролле для навигации
+        window.addEventListener('scroll', function () {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg', 'py-2');
+                nav.classList.remove('py-3');
+            } else {
+                nav.classList.remove('shadow-lg', 'py-2');
+                nav.classList.add('py-3');
+            }
+        });
+
+        // Плавный скролл для якорных ссылок
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 90,
+                        behavior: 'smooth'
+                    });
+
+                    // Закрываем мобильное меню после клика
+                    const navbarCollapse = document.getElementById('navbarNav');
+                    if (navbarCollapse.classList.contains('show')) {
+                        new bootstrap.Collapse(navbarCollapse).toggle();
+                    }
+                }
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+    // Найдем все секции, которые должны появляться плавно
+    const hiddenSections = document.querySelectorAll('.section-hidden');
+
+    const sectionObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    hiddenSections.forEach(section => sectionObserver.observe(section));
+});
+
+        // Инициализируем анимации после загрузки страницы
+        document.addEventListener('DOMContentLoaded', () => {
+            // Добавляем классы для навигации при скролле
+            window.addEventListener('scroll', function () {
+                const nav = document.querySelector('nav');
+                if (window.scrollY > 50) {
+                    nav.classList.add('shadow-lg', 'py-2');
+                    nav.classList.remove('py-3');
+                } else {
+                    nav.classList.remove('shadow-lg', 'py-2');
+                    nav.classList.add('py-3');
+                }
+            });
+
+            // Плавный скролл для якорных ссылок
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 90,
+                            behavior: 'smooth'
+                        });
+
+                        // Закрываем мобильное меню
+                        const navbarCollapse = document.getElementById('navbarNav');
+                        if (navbarCollapse.classList.contains('show')) {
+                            new bootstrap.Collapse(navbarCollapse).toggle();
+                        }
+                    }
+                });
+            });
+
+            // Инициализируем анимации
+            initScrollAnimations();
+        });
+        function updateCountdown() {
+            // Дата начала фестиваля: 21 сентября 2025 года, 00:00:00
+            const festivalDate = new Date('2025-09-21T00:00:00');
+            const now = new Date();
+
+            // Разница в миллисекундах
+            const diff = festivalDate - now;
+
+            // Если дата прошла, показываем нули
+            if (diff <= 0) {
+                document.getElementById('days').textContent = '00';
+                document.getElementById('hours').textContent = '00';
+                document.getElementById('minutes').textContent = '00';
+                document.getElementById('seconds').textContent = '00';
+                return;
+            }
+
+            // Расчет временных значений
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            // Обновление элементов
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        // Обновляем таймер каждую секунду
+        setInterval(updateCountdown, 1000);
+
+        // Инициализация при загрузке
+        updateCountdown();
+        document.addEventListener("DOMContentLoaded", function() {
+  // Список фраз и иконок
+  const phrases = [
+    {
+      text: "Верность истокам",
+      icon: '<i class="fas fa-heart text-danger fs-5"></i>'
+    },
+    {
+      text: "Искусство",
+      icon: '<i class="fas fa-palette text-danger fs-5"></i>'
+    },
+    {
+      text: "Свобода мышления",
+      icon: '<i class="fas fa-brain text-danger fs-5"></i>'
+    },
+    {
+      text: "Кино",
+      icon: '<i class="fas fa-film text-danger fs-5"></i>'
+    }
+  ];
+
+  let current = 0;
+  const textEl = document.getElementById('about-feature-text');
+  const iconEl = document.getElementById('about-feature-icon');
+
+  function showPhrase(idx) {
+    // Сначала убираем видимость
+    textEl.classList.remove("visible");
+    iconEl.classList.remove('icon-animate');
+    // После ухода - меняем контент и показываем плавно
+    setTimeout(() => {
+      textEl.innerHTML = phrases[idx].text;
+      iconEl.innerHTML = phrases[idx].icon;
+      textEl.classList.add("visible");
+      iconEl.classList.add('icon-animate');
+    }, 400); // время совпадает с CSS transition
+  }
+
+  // Покажем первый вариант после загрузки
+  setTimeout(() => {
+    textEl.classList.add("visible");
+    iconEl.classList.add('icon-animate');
+  }, 100);
+
+  // Циклическая смена фраз и иконок
+  setInterval(() => {
+    current = (current + 1) % phrases.length;
+    showPhrase(current);
+  }, 2600); // Меняйте время (мс) на свой вкус (2.6 секунды фраза)
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const aboutSection = document.getElementById('about');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.5 }); // Срабатывает, когда 10% элемента видно
+    
+    observer.observe(aboutSection);
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const section = document.querySelector('#stats');
+    const cards = Array.from(section.querySelectorAll('.stat-card'));
+
+    let sectionAppeared = false;
+
+    const sectionObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !sectionAppeared) {
+                sectionAppeared = true;
+                section.classList.remove('section-hidden');
+                section.classList.add('section-visible');
+                // Стартуем анимацию карточек
+                cards.forEach(card => card.classList.remove('visible')); // reset if needed
+
+                cards.forEach((card, idx) => {
+                    setTimeout(() => {
+                        card.classList.add('visible');
+                    }, idx * 1500);
+                });
+                observer.disconnect();
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    sectionObserver.observe(section);
+});
+    </script>
+</body>
+
+</html>
